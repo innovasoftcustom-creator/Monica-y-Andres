@@ -1,12 +1,39 @@
+// 🎵 Botón de música
 const btn = document.getElementById('music-btn');
 const audio = document.getElementById('wedding-audio');
 let playing = false;
-let timeoutId = null;
+
+// Cuando se pausa manualmente
 audio.addEventListener('pause', () => {
-  btn.textContent = 'Play';
-  playing =false;
+  btn.textContent = '▶️ Play';
+  playing = false;
 });
-// RSVP: desplegar opciones Sí / No y manejar clics
+
+// Cuando termina la canción
+audio.addEventListener('ended', () => {
+  btn.textContent = '▶️ Play';
+  playing = false;
+});
+
+// Control del botón de música
+if (btn && audio) {
+  btn.addEventListener('click', () => {
+    if (!playing) {
+      audio.play().then(() => {
+        btn.textContent = '⏸️ Pause';
+        playing = true;
+      }).catch(err => {
+        console.error('No se pudo reproducir el audio:', err);
+      });
+    } else {
+      audio.pause();
+      btn.textContent = '▶️ Play';
+      playing = false;
+    }
+  });
+}
+
+// 🎟️ RSVP: desplegar opciones Sí / No y manejar clics
 const rsvpBtn = document.getElementById('btn-rsvp');
 const rsvpOptions = document.getElementById('rsvp-options');
 
