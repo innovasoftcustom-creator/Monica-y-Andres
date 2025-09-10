@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andres y Monica </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <header class="header">
+    <img src="Floare colt verde cu alb.jpeg" class="header-flower" alt="Decoración floral superior">
+    <h1 class="main-title">Andres  &amp; Mónica</h1><br><br><br>
+    <div class="marco-wrap">
+      <img src="marco.jpeg" class="foto-marco" alt="Marco decorativo">
+      <img src="WhatsApp Image 2025-09-06 at 11.19.54 AM.jpeg" class="foto-interna" alt="Foto dentro del marco">
+    </div>
+    <p class="subtitle">Aquí empieza la mejor parte de nuestra historia</p>
+  </header>
+  <main class="invitation-main">
+    <section class="invitation-card">
+      <div class="invitation-content">
+        <h2>¡Estás Invitado!</h2>
+        <p class="message">El amor nos une, y queremos que estés presente en esta celebración que quedará grabada en nuestros corazones.</p>
+      </div>
+      <div class="decoracion-esquina">
+      </div>
+    </section>
+  </main>
+  <div class="music-section">
+    <div class="music-text">play/pausa para escuchar/pausar  nuestra canción</div>
+    <button id="music-btn" class="music-btn">Play</button>
+    <audio id="wedding-audio" src="love-seafolk.mp3" loop></audio>
+  </div>
+  <div class="fecha-bloque">
+    <div class="fecha-col">
+      <div class="fecha-line"></div>
+      <div class="fecha-label">Sábado</div>
+    </div>
+    <div class="fecha-central">
+      <div class="fecha-año">2025</div>
+      <div class="fecha-dia">27</div>
+      <div class="fecha-mes">Septiembre</div>
+    </div>
+    <div class="fecha-col">
+      <div class="fecha-line"></div>
+      <div class="fecha-label">Septiembre</div>
+    </div>
+  </div>
+  <div class="bendicion-padres">
+    <div class="bendicion-titulo">Con la bendicion de nuestros padres:</div>
+    <div class="bendicion-nombres">Rolando Brito y Luisa Alvarado<br><br><br><br> Sonia Avila </div>
+  </div>
+  <div class="honor">
+    Tenemos el honor de invitarlos a nuestra boda
+  </div>
+  <div class="ubicaciones-section">
+    <div class="details details-iglesia">
+      <div class="details-header">
+        <span class="details-icon">⛪</span>
+        Iglesia
+      </div>
+      <div class="details-content">
+        Iglesia de San Francisco de Sales <br>
+        17h30<br>
+        <a href="https://maps.app.goo.gl/dWR4JyEuHyMfrxqU9" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+    </div>
+
+    <div class="details details-recepcion">
+      <div class="details-header">
+        <span class="details-icon">🎉</span>
+        Recepción
+      </div>
+      <div class="details-content">
+        Centro de convenciones Baguanchi<br>
+        20H00<br>
+        <a href="https://maps.app.goo.gl/WENEHkmvZsRPgDoa9" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+    </div>
+  </div>
+  <div class="imagen-honor-container">
+    <img src="_.jpeg" class="imagen-honor" alt="Decoración honor">
+  </div>
+
+  <!-- Mini Álbum de los novios -->
+  <section class="mini-album-section" id="mini-album">
+    <h3 class="mini-album-title">Nuestro mini álbum</h3>
+    <div class="mini-album-grid">
+      <a href="WhatsApp Image 2025-09-06 at 11.19.54 AM.jpeg" target="_blank" rel="noopener">
+        <img src="WhatsApp Image 2025-09-06 at 11.19.54 AM.jpeg" alt="Foto 1 - Novios" loading="lazy">
+      </a>
+      <a href="WhatsApp Image 2025-09-06 at 11.19.54 AM (1).jpeg" target="_blank" rel="noopener">
+        <img src="WhatsApp Image 2025-09-06 at 11.19.54 AM (1).jpeg" alt="Foto 3 - Novios" loading="lazy">
+      </a>
+      <a href="WhatsApp Image 2025-09-06 at 11.19.54 AM (2).jpeg" target="_blank" rel="noopener">
+        <img src="WhatsApp Image 2025-09-06 at 11.19.54 AM (2).jpeg" alt="Foto 4 - Novios" loading="lazy">
+      </a>
+    </div>
+  
+  <!-- Código de vestimenta -->
+  <div class="details dresscode">
+    <div class="details-header">
+      <span class="details-icon">👗</span>
+      Código de vestimenta
+    </div>
+    <div class="details-content">
+      Traje formal (no blanco)
+    </div>
+  </div>
+
+  <!-- Botón Confirmar asistencia -->
+  <div class="rsvp-container">
+    <a href="#" id="btn-rsvp" class="btn-rsvp" aria-label="Confirmar asistencia" aria-haspopup="true" aria-expanded="false">Confirmar asistencia</a>
+    <div class="rsvp-options" id="rsvp-options" hidden>
+      <button type="button" class="rsvp-choice" data-choice="si">Sí </button>
+      <button type="button" class="rsvp-choice" data-choice="no">No </button>
+    </div>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
